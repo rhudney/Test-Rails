@@ -8,8 +8,10 @@ Rails.application.routes.draw do
   # namespace :api, defaults: {format: :json} do
 
   # api.meusite.com.br/users
-  namespace :api, defaults: {format: :json}, constraints: {subdomain: 'api'}, path "/" do
+  #namespace :api, defaults: {format: :json}, constraints: {subdomain: 'api'}, path "/" do
 
+  # www.meusite.com.br/api/users
+  namespace :api, defaults: {format: :json}, path: "/" do
   end
 
 end
